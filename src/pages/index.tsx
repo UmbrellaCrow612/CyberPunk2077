@@ -67,7 +67,7 @@ const Home: NextPage = () => {
 
       {/** banner section */}
       <section
-        className="max-w-none text-[#0BEEFF] w-full shadow-md flex items-center justify-center text-center flex-col  bg-center bg-no-repeat bg-fixed h-[500px]"
+        className="max-w-none text-[#0BEEFF] w-full shadow-md flex items-center justify-center text-center flex-col  bg-center bg-no-repeat bg-fixed h-[600px]"
         style={{ backgroundImage: 'url(/images/banner.jpeg' }}
       />
     </>
