@@ -48,3 +48,12 @@ Next js allows you to server and static but also have other methods.
 Where i got the favicons from 
 
 https://commons.wikimedia.org/wiki/File:Cyberpunk_2077_favicon.png
+
+Where i got the stock images
+
+https://wonder-day.com/en/cyberpunk-2077-png-2/
+
+
+where i got cool hover 
+
+https://devdojo.com/tailwindcss/buttons
