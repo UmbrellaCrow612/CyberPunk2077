@@ -68,13 +68,13 @@ const Home: NextPage = () => {
       {/** banner section */}
 
       <section
-        className="h-[150px] max-w-none w-full shadow-md flex items-center justify-center text-center flex-col bg-cover bg-center bg-no-repeat xl:bg-fixed xl:h-[280px]"
-        style={{ backgroundImage: 'url(/images/banner-1.jpg' }}
+        className="max-w-none text-[#0BEEFF] w-full shadow-md flex items-center justify-center text-center flex-col  bg-center bg-no-repeat bg-fixed h-[500px]"
+        style={{ backgroundImage: 'url(/images/banner.jpeg' }}
       >
-        <Typography className="hidden xl:block" variant="h3">
+        <Typography  variant="h3">
           IT LOOKS AMAZING
         </Typography>
-        <Typography className="hidden xl:block" variant="h6">
+        <Typography  variant="h6">
           - IGN
         </Typography>
       </section>
