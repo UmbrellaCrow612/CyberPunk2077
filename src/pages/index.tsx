@@ -3,7 +3,7 @@ import { Button, Typography } from '@material-tailwind/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Section } from '../components'
-
+import { AiOutlineArrowRight } from 'react-icons/ai'
 const Home: NextPage = () => {
   return (
     <>
@@ -19,7 +19,18 @@ const Home: NextPage = () => {
         <div
           className="bg-contain bg-center bg-no-repeat h-full"
           style={{ backgroundImage: 'url(/images/bg-person.png)' }}
-        />
+        >
+          <div className="bg-[#06EFFF] w-[150px] h-[120px] p-2 py-3 rounded-r-3xl rounded-br-3xl hidden md:flex flex-col justify-between font-medium cursor-pointer shadow-md">
+            <div>
+              <span className="">Our commitment To quality</span>
+              <br />
+              <div className="h-[2px] border-[0.5px] bg-black rounded-full" />
+            </div>
+            <span className="mt-4 font-semibold tracking-wider flex items-center w-full">
+              Learn more <AiOutlineArrowRight className='ml-3'/>
+            </span>
+          </div>
+        </div>
         <div className="flex items-center justify-center flex-col">
           <iframe
             className="w-full h-[50%] rounded-3xl hidden md:block  mb-3"
@@ -45,7 +56,12 @@ const Home: NextPage = () => {
             <span className="relative">AVAILABLE NOW</span>
           </a>
           {/** Consoles */}
-          <img src="/images/consoles.jpeg" alt="Switch Playstation xbox" loading="lazy" className="h-[100px] mt-4 rounded-xl md:h-[140px]"/>
+          <img
+            src="/images/consoles.jpeg"
+            alt="Switch Playstation xbox"
+            loading="lazy"
+            className="h-[100px] mt-4 rounded-xl md:h-[140px]"
+          />
         </div>
       </Section>
     </>
