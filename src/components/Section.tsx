@@ -7,5 +7,11 @@ export const Section: React.FC<SectionProps> = ({
   children,
   tailwindClasses,
 }) => {
-  return <section className={`${tailwindClasses} max-w-screen-2xl mx-auto`}>{children}</section>
+  return (
+    <section
+      className={`${tailwindClasses} max-w-screen-2xl mx-auto`}
+    >
+      {children}
+    </section>
+  )
 }

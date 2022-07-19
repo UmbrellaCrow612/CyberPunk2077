@@ -27,7 +27,7 @@ const Home: NextPage = () => {
               <div className="h-[2px] border-[0.5px] bg-black rounded-full" />
             </div>
             <span className="mt-4 font-semibold tracking-wider flex items-center w-full">
-              Learn more <AiOutlineArrowRight className='ml-3'/>
+              Learn more <AiOutlineArrowRight className="ml-3" />
             </span>
           </div>
         </div>
@@ -64,6 +64,20 @@ const Home: NextPage = () => {
           />
         </div>
       </Section>
+
+      {/** banner section */}
+
+      <section
+        className="h-[150px] max-w-none w-full shadow-md flex items-center justify-center text-center flex-col bg-cover bg-center bg-no-repeat xl:bg-fixed xl:h-[280px]"
+        style={{ backgroundImage: 'url(/images/banner-1.jpg' }}
+      >
+        <Typography className="hidden xl:block" variant="h3">
+          IT LOOKS AMAZING
+        </Typography>
+        <Typography className="hidden xl:block" variant="h6">
+          - IGN
+        </Typography>
+      </section>
     </>
   )
 }
