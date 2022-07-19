@@ -41,3 +41,10 @@ Take inventory of your page types.
 ## Choose the right data fetching pattern
 
 Next js allows you to server and static but also have other methods.
+
+
+# Mentions
+
+Where i got the favicons from 
+
+https://commons.wikimedia.org/wiki/File:Cyberpunk_2077_favicon.png
