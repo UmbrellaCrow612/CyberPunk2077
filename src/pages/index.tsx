@@ -70,6 +70,12 @@ const Home: NextPage = () => {
         className="max-w-none text-[#0BEEFF] w-full shadow-md flex items-center justify-center text-center flex-col  bg-center bg-no-repeat bg-fixed h-[600px]"
         style={{ backgroundImage: 'url(/images/banner.jpeg' }}
       />
+
+      {/** Banner 2 */}
+      <section
+        className="max-w-none text-black w-full shadow-md text-center flex-col bg-top  bg-no-repeat bg-fixed h-[750px]"
+        style={{ backgroundImage: 'url(/images/banner-2.jpg' }}
+      />
     </>
   )
 }
