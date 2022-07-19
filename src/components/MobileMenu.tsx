@@ -1,5 +1,5 @@
 import { Icons } from './Header'
-import { BiMenu } from 'react-icons/bi'
+import { IoShareSocialOutline } from 'react-icons/io5'
 
 import { useState } from 'react'
 import {
@@ -20,10 +20,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = () => {
         <MenuHandler>
           <IconButton
             variant="outlined"
-            className="border-[#000000]"
+            className="border-[#000000] md:hidden"
             onClick={() => setOpen(!open)}
           >
-            <BiMenu className="text-2xl text-[#000000]" />
+            <IoShareSocialOutline className="text-2xl text-[#000000]" />
           </IconButton>
         </MenuHandler>
         <MenuList className="bg-[#fdf97f]">

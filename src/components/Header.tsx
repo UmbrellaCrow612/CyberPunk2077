@@ -18,18 +18,30 @@ export const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       <nav className="mx-auto max-w-screen-2xl h-[80px] border flex items-center px-3 justify-between">
+        {/** Cyber logo */}
+
+        <Link href="/">
+          <a className="hidden md:block">
+            <img
+              src="/images/logo.png"
+              alt="cd project red"
+              loading="lazy"
+              className="w-[175px] h-[60px] hidden md:block"
+            />
+          </a>
+        </Link>
         {/** Icon container */}
-        <div className="hidden md:flex">
+        <div className="hidden md:flex w-[350px] p-3 justify-between">
           {Icons.map((Icon) => (
             <>
-              <Icon.icon />
+              <Icon.icon className="text-3xl cursor-pointer" />
             </>
           ))}
         </div>
         {/** Mobile menu */}
         <MobileMenu />
 
-        {/** Logo */}
+        {/** red bird */}
         <Link href="/">
           <a>
             <img
