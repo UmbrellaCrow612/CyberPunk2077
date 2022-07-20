@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { Button, Typography } from '@material-tailwind/react'
+import { Typography } from '@material-tailwind/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Section } from '../components'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 const Home: NextPage = () => {
   return (
@@ -15,9 +14,9 @@ const Home: NextPage = () => {
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
       </Head>
-      <Section tailwindClasses="grid grid-cols-1 grid-rows-2 h-[600px] md:grid-cols-2 md:grid-rows-none">
+      <section className="grid max-w-screen-2xl mx-auto grid-cols-1 grid-rows-2 h-[600px] md:grid-cols-2 md:grid-rows-none">
         <div
-          className="bg-contain bg-center bg-no-repeat h-full"
+          className="h-full bg-center bg-no-repeat bg-contain"
           style={{ backgroundImage: 'url(/images/bg-person.png)' }}
         >
           <div className="bg-[#06EFFF] w-[150px] h-[120px] p-2 py-3 rounded-r-3xl rounded-br-3xl hidden md:flex flex-col justify-between font-medium cursor-pointer shadow-md">
@@ -26,12 +25,12 @@ const Home: NextPage = () => {
               <br />
               <div className="h-[2px] border-[0.5px] bg-black rounded-full" />
             </div>
-            <span className="mt-4 font-semibold tracking-wider flex items-center w-full">
+            <span className="flex items-center w-full mt-4 font-semibold tracking-wider">
               Learn more <AiOutlineArrowRight className="ml-3" />
             </span>
           </div>
         </div>
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex flex-col items-center justify-center">
           <iframe
             className="w-full h-[50%] rounded-3xl hidden md:block  mb-3"
             width="560"
@@ -47,7 +46,7 @@ const Home: NextPage = () => {
           {/** Button */}
           <a
             href="#_"
-            className="relative px-8 py-4 font-medium text-white group mt-2"
+            className="relative px-8 py-4 mt-2 font-medium text-white group"
           >
             <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-[#FF113C] group-hover:bg-[#FF113C] group-hover:skew-x-12"></span>
             <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-[#FF113C]  group-hover:bg-[#FF114c] group-hover:-skew-x-12"></span>
@@ -63,14 +62,70 @@ const Home: NextPage = () => {
             className="h-[100px] mt-4 rounded-xl md:h-[140px]"
           />
         </div>
-      </Section>
+      </section>
 
       {/** banner section */}
       <section
         className="max-w-none text-[#0BEEFF] w-full shadow-md flex items-center justify-center text-center flex-col  bg-center bg-no-repeat bg-fixed h-[600px]"
         style={{ backgroundImage: 'url(/images/banner.jpeg' }}
       />
+      {/** second hero*/}
+      <section className="h-[1200px] md:h-[900px] max-w-screen-2xl mx-auto text-center p-3">
+        <Typography variant="h4" className="mt-6 md:hidden">
+          NEXT-GENERATION UPDATE
+        </Typography>
+        <Typography variant="lead" className="mt-6 md:hidden">
+          Experience Night City on the latest generation of consoles, featuring
+          enhanced performance, graphics, and features designed with the power
+          of the PlayStation 5 and Xbox Series X|S in mind.
+        </Typography>
+        <Typography variant="h2" className="hidden mt-9 md:block">
+          NEXT-GENERATION UPDATE
+        </Typography>
+        <Typography variant="h4" className="hidden mb-3 mt-9 md:block">
+          Experience Night City on the latest generation of consoles, featuring
+          enhanced performance, graphics, and features designed with the power
+          of the PlayStation 5 and Xbox Series X|S in mind.
+        </Typography>
 
+        <div className="grid h-[80%] md:h-[70%] gap-8 grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-none">
+          <div className="border-[5px] relative flex flex-col items-center cursor-pointer bg-[#06EFFF] hover:bg-white duration-300 transition ease-in-out delay-150 p-4">
+            <img
+              src="/images/grid-1.jpeg"
+              alt="City"
+              className="w-[85%] md:w-full"
+            />
+            <Typography variant="h4" className="mt-2">
+              ENHANCED FOR NEXT-GEN CONSOLES
+            </Typography>
+            <Typography variant="lead" className="mt-2">
+              PATCH 1.5 AVAILABLE ON NEXT-GEN CONSOLES BRINGS NEW FEATURES AND
+              ADVENTURES
+            </Typography>
+
+            <div className="absolute bottom-3 right-3">
+              <AiOutlineArrowRight className="text-3xl" />
+            </div>
+          </div>
+          <div className="border-[5px] relative flex flex-col items-center cursor-pointer bg-[#06EFFF] hover:bg-white duration-300 transition ease-in-out delay-150 p-4">
+            <img
+              src="/images/grid-2.jpeg"
+              alt="City"
+              className="w-[85%] md:w-full"
+            />
+            <Typography variant="h4" className="mt-2">
+              FREE ADDITIONAL CONTENT
+            </Typography>
+            <Typography variant="lead" className="mt-2">
+              FROM NEW EQUIPMENT AND WEAPONS TO APARTMENTS AND GADGETS
+            </Typography>
+
+            <div className="absolute bottom-3 right-3">
+              <AiOutlineArrowRight className="text-3xl" />
+            </div>
+          </div>
+        </div>
+      </section>
       {/** Banner 2 */}
       <section
         className="max-w-none text-black w-full shadow-md text-center flex-col bg-top  bg-no-repeat bg-fixed h-[750px]"
