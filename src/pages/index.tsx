@@ -2,7 +2,8 @@
 import { Typography } from '@material-tailwind/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
+import { WireTabs } from '../components'
 const Home: NextPage = () => {
   return (
     <>
@@ -131,6 +132,30 @@ const Home: NextPage = () => {
         className="max-w-none text-black w-full shadow-md text-center flex-col bg-top  bg-no-repeat bg-fixed h-[750px]"
         style={{ backgroundImage: 'url(/images/banner-2.jpg' }}
       />
+
+      {/** Playlist 2 */}
+
+      <section className="mx-auto max-w-screen-2xl h-[800px] bg-[#FEED07] flex flex-col items-center py-3">
+        <img
+          src="/images/wire.png"
+          alt="Wire yellow logo"
+          loading="lazy"
+          className="w-[250px] mb-5"
+        />
+        <WireTabs />
+        <div className="mt-4 border-[4px] rounded-r-lg text-center h-[130px] w-[200px] flex flex-col items-center justify-between cursor-pointer">
+          <Typography variant="lead" className="mb-6">
+            FREE GOODIES
+          </Typography>
+          <div className="flex items-center justify-between w-full h-full bg-black">
+            <AiOutlineArrowRight className="text-[#00D8F3]" />
+            <Typography variant="h6" className="text-[#00D8F3]">
+              DOWNLOAD NOW
+            </Typography>
+            <AiOutlineArrowLeft className="text-[#00D8F3]" />
+          </div>
+        </div>
+      </section>
     </>
   )
 }

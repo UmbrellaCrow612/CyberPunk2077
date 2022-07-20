@@ -17,7 +17,7 @@ interface HeaderProps {}
 export const Header: React.FC<HeaderProps> = () => {
   return (
     <>
-      <nav className="mx-auto max-w-screen-2xl h-[80px] flex items-center px-3 justify-between sticky top-0">
+      <nav className="mx-auto max-w-screen-2xl h-[80px] flex items-center px-3 justify-between sticky top-0 z-10">
         {/** Cyber logo */}
 
         <Link href="/">
